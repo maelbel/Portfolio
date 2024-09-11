@@ -1,5 +1,4 @@
 import Typing from '@/app/ui/typing';
-import Image from 'next/image';
 import Balise from '@/app/ui/balise';
 
 export default function Page() {
@@ -15,7 +14,7 @@ export default function Page() {
           <div className="flex flex-col justify-center items-center p-6 text-center rounded-sm">
             <h1 className="text-2xl font-extrabold text-center">Salut, je suis Mael Belliard</h1>
             <h1 className="text-5xl font-semibold dark:text-blue-600" >Développeur <Typing /></h1>
-            <p className="mt-6 mb-8 text-lg sm:mb-12">Activement à la recherche d'une alternance en tant que développeur full-stack 
+            <p className="mt-6 mb-8 text-lg sm:mb-12">Activement à la recherche d&apos;une alternance en tant que développeur full-stack 
             </p>
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
               <a rel="noopener noreferrer" href="#projects" className="px-8 py-3 text-lg font-semibold rounded bg-gray-900 text-gray-50 hover:bg-blue-600">Mes projets</a>
@@ -25,7 +24,9 @@ export default function Page() {
         </div>
       </section>
       <section id="about" className='h-screen'>
-
+      <h1 className=''>About</h1>
+        <div>Développeur passionné, je crée des solutions web innovantes pour simplifier la gestion numérique et améliorer l&apos;expérience utilisateur.</div>
+        <Balise source="nextjs" title="Next" href="https://nextjs.org/" />
       </section>
       <section id="resume" className='h-screen'>
         
