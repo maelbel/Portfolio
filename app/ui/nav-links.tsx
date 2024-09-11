@@ -26,32 +26,32 @@ export default function NavLinks() {
   const pathname = usePathname();
  
   return (
-    <ScrollspyNav
-        scrollTargetIds={["home", "about", "resume", "projects", "contact"]}
-        offset={100}
-        activeNavClass="text-white"
-        scrollDuration="1000" 
-    >
-        <div className="px-3">
-            {links.map((link) => {
-                const LinkIcon = link.icon;
-                return (
-                <Link
-                    key={link.name}
-                    href={link.href}
-                    className={clsx(
-                    'flex h-[48px] grow items-center justify-center gap-2 py-3 px-5 mb-3 text-md font-medium text-gray-400 hover:text-gray-50 md:flex-none md:justify-start md:p-2 md:px-3',
-                    {
-                        'text-gray-50': pathname === link.href,
-                    },
-                    )}
-                >
-                    <LinkIcon className="w-6" />
-                    <p className="hidden md:block">{link.name}</p>
-                </Link>
-                );
-            })}
-        </div>
-    </ScrollspyNav>
+    <div className='px-3'>
+        <ScrollspyNav
+            scrollTargetIds={["home", "about", "resume", "projects", "contact"]}
+            offset={100}
+            activeNavClass="text-white"
+            scrollDuration="1000"
+        >
+                {links.map((link) => {
+                    const LinkIcon = link.icon;
+                    return (
+                    <Link
+                        key={link.name}
+                        href={link.href}
+                        className={clsx(
+                        'flex h-[48px] grow items-center justify-center gap-2 py-3 px-5 mb-3 text-md font-medium text-gray-400 hover:text-gray-50 md:flex-none md:justify-start md:p-2 md:px-3',
+                        {
+                            'text-gray-50': pathname === link.href,
+                        },
+                        )}
+                    >
+                        <LinkIcon className="w-6" />
+                        <p className="hidden md:block">{link.name}</p>
+                    </Link>
+                    );
+                })}
+        </ScrollspyNav>
+    </div>
   );
 }
