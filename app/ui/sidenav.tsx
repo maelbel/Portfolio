@@ -12,6 +12,7 @@ export default function SideNav() {
                     src="/photo.png"
                     width={150}
                     height={100}
+                    priority={true} 
                     className='scale-x-[-1] rounded-full border-4 border-gray-50'
                     alt="Photo de Mael Belliard"
                 />
