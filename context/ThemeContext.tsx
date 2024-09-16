@@ -19,20 +19,21 @@ export const useTheme = () => {
 
 // Le provider qui encapsulera toute l'application
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
+  const [theme, setTheme] = useState<'light' | 'dark' | null>(null); // null signifie que le thème n'est pas encore déterminé
 
   // Fonction pour récupérer le thème initial
   const getInitialTheme = (): 'light' | 'dark' => {
-    const savedTheme = localStorage.getItem('theme');
-    if (savedTheme === 'light' || savedTheme === 'dark') {
-      return savedTheme;
+    if (typeof window !== 'undefined') {
+      const savedTheme = localStorage.getItem('theme');
+      if (savedTheme === 'light' || savedTheme === 'dark') {
+        return savedTheme;
+      }
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark';
+      }
     }
-    if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
-      return 'dark';
-    }
-    return 'light';
+    return 'light'; // Valeur par défaut si tout échoue
   };
-
-  const [theme, setTheme] = useState<'light' | 'dark'>(() => getInitialTheme());
 
   // Mettre à jour le thème dans localStorage et dans le document
   const updateTheme = (newTheme: 'light' | 'dark') => {
@@ -43,7 +44,9 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 
   // Toggle entre "light" et "dark"
   const toggleTheme = () => {
-    updateTheme(theme === 'dark' ? 'light' : 'dark');
+    if (theme) {
+      updateTheme(theme === 'dark' ? 'light' : 'dark');
+    }
   };
 
   // Charger le thème initial côté client
@@ -51,6 +54,11 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     const initialTheme = getInitialTheme();
     updateTheme(initialTheme);
   }, []);
+
+  // Afficher une classe de chargement tant que le thème n'est pas défini
+  if (theme === null) {
+    return <div className="loading">Loading...</div>;
+  }
 
   return (
     <ThemeContext.Provider value={{ theme, toggleTheme }}>
