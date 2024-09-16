@@ -57,7 +57,7 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
 
   // Afficher une classe de chargement tant que le thème n'est pas défini
   if (theme === null) {
-    return <div className="loading">Loading...</div>;
+    return <></>;
   }
 
   return (

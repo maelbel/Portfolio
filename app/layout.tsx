@@ -1,7 +1,7 @@
 'use client';
 
 import '@/app/ui/global.css';
-import Nav from '@/app/ui/nav';
+import Nav from '@/components/nav/nav';
 import { opensans } from '@/app/ui/fonts';
 import { ThemeProvider } from '@/context/ThemeContext';
 
@@ -17,12 +17,12 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Portfolio | Mael</title>
       </head>
-      <ThemeProvider>
         <body className={`${opensans.className} antialiased bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-50`}>
-          <Nav />
-          {children}
+          <ThemeProvider>
+            <Nav />
+            {children}
+          </ThemeProvider>
         </body>
-      </ThemeProvider>
     </html>
   );
 }

@@ -1,6 +1,6 @@
 'use client';
 
-import ThemeToggle from '@/app/ui/theme-toggle';
+import ThemeToggle from '@/components/theme-toggle';
 
 import {
     ChartBarIcon,

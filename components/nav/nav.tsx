@@ -1,5 +1,5 @@
-import ToolLinks from '@/app/ui/tool-links';
-import NavLinks from '@/app/ui/nav-links';
+import ToolLinks from '@/components/nav/tool-links';
+import NavLinks from '@/components/nav/nav-links';
 
 export default function Nav() {
   return (
