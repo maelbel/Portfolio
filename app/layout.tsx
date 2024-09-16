@@ -1,24 +1,28 @@
-'use client'
+'use client';
 
 import '@/app/ui/global.css';
-import SideNav from '@/app/ui/sidenav';
+import Nav from '@/app/ui/nav';
 import { opensans } from '@/app/ui/fonts';
- 
+import { ThemeProvider } from '@/context/ThemeContext';
+
 export default function Layout({ children }: { children: React.ReactNode }) {
 
   return (
-    <html lang="fr">
+    <html lang="fr" className='transition-all duration-400'>
       <head>
+        <meta charSet="UTF-8"/>
+        <meta name="description" content="Portfolio de Mael Belliard. Développeur Full Stack"/>
+        <meta name="keywords" content="développeur, fullstack, frontend, backend, junior"/>
+        <meta name="author" content="Mael Belliard"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <title>Portfolio | Mael</title>
       </head>
-      <body className={`${opensans.className} antialiased bg-gray-50`}>
-        <div className="flex h-screen flex-col md:flex-row md:overflow-hidden">
-          <div className="w-full flex-none md:w-80">
-            <SideNav />
-          </div>
-          <div className="flex-grow md:overflow-y-auto">{children}</div>
-        </div>
-      </body>
+      <ThemeProvider>
+        <body className={`${opensans.className} antialiased bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-50`}>
+          <Nav />
+          {children}
+        </body>
+      </ThemeProvider>
     </html>
   );
 }

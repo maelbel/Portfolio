@@ -2,12 +2,18 @@
 @tailwind components;
 @tailwind utilities;
 
-*, html, body {
+* {
   scroll-behavior: smooth;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+header {
+  background-color: #ffffffbf;
+  border-bottom: 1px solid #0000001a;
+  filter: saturate(2);
+  backdrop-filter: blur(4px);
+}
+
+header:is(.dark *) {
+  background-color: #00000080;
+  border-bottom: 1px solid #FFFFFF40;
 }

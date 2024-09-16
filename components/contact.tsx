@@ -24,72 +24,72 @@ const Contact: FC = () => {
     <form onSubmit={handleSubmit(onSubmit)} className="mx-auto mt-4 max-w-xl sm:mt-10">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
-                <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                <label htmlFor="first-name" className="block text-sm font-semibold leading-6">
                 Prénom
                 </label>
                 <div className="mt-2.5">
                     <input
                         type="text"
                         autoComplete="given-name"
-                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                        className="block w-full rounded-md border-0 text-gray-900 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
                         {...register('firstname', { required: true })}
                     />
                 </div>
             </div>
             <div>
-                <label htmlFor="first-name" className="block text-sm font-semibold leading-6 text-gray-900">
+                <label htmlFor="first-name" className="block text-sm font-semibold leading-6">
                 Nom
                 </label>
                 <div className="mt-2.5">
                     <input
                         type="text"
                         autoComplete="given-name"
-                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                        className="block w-full rounded-md border-0 text-gray-900 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
                         {...register('lastname', { required: true })}
                     />
                 </div>
             </div>
             <div>
-                <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+                <label htmlFor="email" className="block text-sm font-semibold leading-6">
                 Email
                 </label>
                 <div className="mt-2.5">
                     <input
                         type="email"
                         autoComplete="email"
-                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                        className="block w-full rounded-md border-0 text-gray-900 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
                         {...register('email', { required: true })}
                     />
                 </div>
             </div>
             <div>
-                <label htmlFor="phone" className="block text-sm font-semibold leading-6 text-gray-900">
+                <label htmlFor="phone" className="block text-sm font-semibold leading-6">
                 Téléphone
                 </label>
                 <div className="mt-2.5">
                     <input
                         type="text"
                         autoComplete="phone"
-                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                        className="block w-full rounded-md border-0 text-gray-900 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
                         {...register('phone', { required: false })}
                     />
                 </div>
             </div>
             <div className="sm:col-span-2">
-                <label htmlFor="email" className="block text-sm font-semibold leading-6 text-gray-900">
+                <label htmlFor="email" className="block text-sm font-semibold leading-6">
                 Sujet
                 </label>
                 <div className="mt-2.5">
                     <input
                         type="text"
                         autoComplete="subject"
-                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                        className="block w-full rounded-md border-0 text-gray-900 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
                         {...register('subject', { required: true })}
                     />
                 </div>
             </div>
             <div className="sm:col-span-2">
-                <label htmlFor="message" className="block text-sm font-semibold leading-6 text-gray-900">
+                <label htmlFor="message" className="block text-sm font-semibold leading-6">
                 Message
                 </label>
                 <div className="mt-2.5">
