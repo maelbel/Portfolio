@@ -2,9 +2,9 @@ import Typing from '@/components/typing';
 import Title from '@/components/title';
 import Parcours from '@/components/parcours';
 import Project from '@/components/project';
-import Techno from '@/components/techno';
 import Tag from '@/components/tag';
-// import Balise from '@/app/ui/balise';
+import Stack from '@/components/stack';
+// import Balise from '@/app/components/balise';
 // import Link from 'next/link';
 import Contact from '@/components/contact';
 import Image from 'next/image';
@@ -25,8 +25,8 @@ export default function Page() {
             <h1 className="text-5xl font-semibold text-blue-600" >Développeur <Typing /></h1>
             <p className="mt-6 mb-8 text-lg sm:mb-12">Activement à la recherche d&apos;une alternance en tant que développeur full-stack</p>
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-              <a rel="noopener noreferrer" href="#projects" className="px-8 py-3 text-lg font-semibold rounded bg-blue-600 text-gray-50 hover:bg-gray-900 dark:hover:bg-gray-50 dark:hover:text-blue-600 transition-all duration-400">Explorer mes projets</a>
-              <a rel="noopener noreferrer" href="#resume" className="px-8 py-3 text-lg font-semibold rounded bg-gray-900 text-gray-50 hover:bg-blue-600 dark:bg-gray-50 dark:text-blue-600 dark:hover:bg-blue-600 dark:hover:text-gray-50 transition-all duration-400">Découvrir mon parcours</a>
+              <a rel="noopener noreferrer" href="#projects" className="px-8 py-3 text-lg font-semibold rounded bg-blue-600 text-gray-50 hover:bg-gray-900 dark:hover:bg-gray-800 transition-all duration-400">Explorer mes projets</a>
+              <a rel="noopener noreferrer" href="#resume" className="px-8 py-3 text-lg font-semibold rounded bg-gray-200 text-gray-900 hover:bg-gray-400 dark:bg-gray-800 dark:text-gray-50 dark:hover:bg-blue-600 transition-all duration-400">Découvrir mon parcours</a>
               <a rel="noopener noreferrer" href="#about" className="px-8 py-3 text-lg font-semibold border rounded border-gray-900 text-gray-900 hover:border-blue-600 hover:text-blue-600 dark:text-gray-50 dark:border-gray-50 dark:hover:border-blue-600 dark:hover:text-blue-600 transition-all duration-400">En savoir plus</a>
             </div>
           </div>
@@ -84,33 +84,24 @@ export default function Page() {
       </section>
       <section id="projects">
         <div className='container flex flex-col px-5 py-28 mx-auto max-w-screen-lg'>
-          <Title title='Mes projets' />
-          <div className='flex justify-around items-center'>
-            <Project title="Portfolio" description="Développement de mon portfolio">
-              <Techno title="Typescript" source="typescript" />
-              <Techno title="NextJS" source="nextjs" />
-              <Techno title="Tailwind CSS" source="tailwind" />
+          <div className='flex justify-between items-end'>
+            <Title title='Mes récents projets' />
+            {/* <a href="/projects" className='mb-2 me-4'>Explorer</a> */}
+          </div>
+          <div className='p-2 mb-4'>
+            <Project title="Portfolio" description="Développement de mon portfolio" preview="portfolio" link="https://belliard-portfolio.vercel.app/">
+              <Stack size="25" icons={["typescript", "next", "tailwind"]} />
             </Project>
-            <Project title="Edusign" description="Site de gestion numérique des présences avec signatures">
-              <Techno title="PHP" source="php" />
-              <Techno title="Bootstrap" source="bootstrap" />
-              <Techno title="jQuery" source="jquery" />
-              <Techno title="MySQL" source="mysql" />
+            <Project title="Edusign" description="Site de gestion numérique des présences avec signatures" preview="portfolio" link="https://github.com/maelbel/Edusign">
+              <Stack size="25" icons={["php", "bootstrap", "jquery", "mysql"]} />
             </Project>
-            <Project title="COSMOS" description="Site multilingue sur l'espace">
-              <Techno title="NodeJS" source="nodejs" />
-              <Techno title="MongoDB" source="mongodb" />
+            <Project title="COSMOS" description="Site multilingue sur l'espace" preview="portfolio" link="https://github.com/maelbel/WebSite-COSMOS">
+              <Stack size="25" icons={["nodejs", "express", "mongodb"]} />
             </Project>
-            <Project title="Le mystère de Corte" description="Jeu Intéractif Full Motion Vidéo">
-              <Techno title="Electron" source="electron" /> 
+            <Project title="Le mystère de Corte" description="Jeu Intéractif Full Motion Vidéo" preview="portfolio" link="https://github.com/maelbel/le-mystere-de-corte">
+              <Stack size="25" icons={["electron"]} />
             </Project>
           </div>
-          {/* <Link href="/projects" className="text-md font-semibold my-3 text-center">Voir tous mes projets <ArrowLongRightIcon width={10} className='inline' /></Link> */}
-        </div>
-      </section>
-      <section id="testimonial">
-        <div className='container flex flex-col px-5 py-28 mx-auto max-w-screen-lg'>
-          <Title  title="Ils m'ont recommandé" />
         </div>
       </section>
       <section id="contact">
