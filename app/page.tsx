@@ -6,18 +6,13 @@ import Tag from '@/components/tag';
 import Stack from '@/components/stack';
 // import Balise from '@/app/components/balise';
 // import Link from 'next/link';
-import Contact from '@/components/contact';
+
 import Image from 'next/image';
 
 export default function Page() {
 
   return (
     <main className='relative'>
-      {/* <div className='fixed top-5 right-5'>
-        <a className="font-semibold rounded-full p-3 bg-gray-900 text-gray-50 hover:bg-blue-600" href="/CV_Alternance.pdf" download="BELLIARD_Mael_CV.pdf" >
-          Télécharger mon CV
-        </a>
-      </div> */}
       <section id="home">
         <div className="relative h-screen flex flex-col justify-center items-center mx-auto lg:flex-row">
           <div className="flex flex-col justify-center items-center p-6 text-center rounded-sm">
@@ -41,10 +36,10 @@ export default function Page() {
           <div className='container flex justify-center px-5 pt-28 pb-52 mx-auto max-w-screen-lg'>
             <div className='w-2/3 text-justify'>
               <Title title='À propos' />
-              <p className='my-10'>Je suis développeur full-stack, créateur d&apos;applications, passionné de technologies, étudiant en alternance et explorateur de solutions innovantes.</p>
+              <p className='my-10'>Je suis <b>développeur full-stack, créateur d&apos;applications, passionné de technologies, étudiant en alternance</b> et <b>explorateur de solutions innovantes.</b></p>
               <p className='my-10'>J&apos;aime à la fois concevoir et optimiser des solutions numériques. Je suis motivé par des projets techniques qui nécessitent de la recherche autonome et une résolution de problèmes dynamique. Ma véritable passion réside dans la création d&apos;applications performantes, tout en accordant une attention particulière à l&apos;expérience utilisateur, à la performance et à la qualité du code.</p>
-              <p className='my-10'>Au cours de ma formation et de mes projets</p>
-              <p className='my-10'>J&apos;ai développé des solutions allant de sites vitrines et plateformes e-commerce à des applications d&apos;entreprise complexes, avec un souci constant de livrer un code propre, performant et des interfaces utilisateur agréables.</p>
+              <p className='my-10'>Au cours de mon expérience professionnel et de mes projets</p>
+              <p className='my-10'>J&apos;ai développé des solutions allant de sites vitrines et plateformes e-commerce à des applications d&apos;entreprise, avec un souci constant de livrer un code propre, performant et des interfaces utilisateur agréables.</p>
               <p className='my-10'>Actuellement</p>
               <p className='my-10'>Je cherche une alternance en tant que développeur full-stack, où je me concentrerais sur la planification de solutions innovantes, la conception d&apos;application et le développement avec des technologies comme Next.js, React.js, Node.js, PostgreSQL et MongoDB.</p>
             </div>
@@ -60,7 +55,7 @@ export default function Page() {
       </section>
       <section id="resume">
         <div className='relative'>
-          <div className='container flex flex-col px-5 py-28 mx-auto max-w-screen-lg'>
+          <div className='container flex flex-col px-5 pt-28 mx-auto max-w-screen-lg'>
             <Title title='Mon parcours' />
             <div className=''>
               <Parcours title="Master Lead Developer: Data & IA" lieu="En distanciel" date="Octobre 2024 - Juin 2026">
@@ -83,32 +78,24 @@ export default function Page() {
         </div>
       </section>
       <section id="projects">
-        <div className='container flex flex-col px-5 py-28 mx-auto max-w-screen-lg'>
+        <div className='container flex flex-col px-5 pt-28 mx-auto max-w-screen-lg'>
           <div className='flex justify-between items-end'>
             <Title title='Mes récents projets' />
             {/* <a href="/projects" className='mb-2 me-4'>Explorer</a> */}
           </div>
           <div className='p-2 mb-4'>
-            <Project title="Portfolio" description="Développement de mon portfolio" preview="portfolio" link="https://belliard-portfolio.vercel.app/">
+            <Project title="Portfolio" description="Développement de mon portfolio" date="SEPTEMBRE 2024" link="https://belliard-portfolio.vercel.app/">
               <Stack size="25" icons={["typescript", "next", "tailwind"]} />
             </Project>
-            <Project title="Edusign" description="Site de gestion numérique des présences avec signatures" preview="portfolio" link="https://github.com/maelbel/Edusign">
+            <Project title="Edusign" description="Site de gestion numérique des présences avec signatures" date="AOUT 2024 - SEPTEMBRE 2024" link="https://github.com/maelbel/Edusign">
               <Stack size="25" icons={["php", "bootstrap", "jquery", "mysql"]} />
             </Project>
-            <Project title="COSMOS" description="Site multilingue sur l'espace" preview="portfolio" link="https://github.com/maelbel/WebSite-COSMOS">
+            <Project title="COSMOS" description="Site multilingue sur l'espace" date="AVRIL 2021" link="https://github.com/maelbel/WebSite-COSMOS">
               <Stack size="25" icons={["nodejs", "express", "mongodb"]} />
             </Project>
-            <Project title="Le mystère de Corte" description="Jeu Intéractif Full Motion Vidéo" preview="portfolio" link="https://github.com/maelbel/le-mystere-de-corte">
+            <Project title="Le mystère de Corte" description="Jeu Intéractif Full Motion Vidéo" date="2019 - 2024" link="https://github.com/maelbel/le-mystere-de-corte">
               <Stack size="25" icons={["electron"]} />
             </Project>
-          </div>
-        </div>
-      </section>
-      <section id="contact">
-        <div className='container flex flex-col px-5 py-28 mx-auto max-w-screen-lg'>
-          <Title title='Contactez-moi' />
-          <div className="px-6 lg:px-8">
-            <Contact />
           </div>
         </div>
       </section>

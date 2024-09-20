@@ -1,9 +1,10 @@
 'use client';
 
 import '@/app/ui/global.css';
-import Nav from '@/components/nav/nav';
 import { opensans } from '@/app/ui/fonts';
 import { ThemeProvider } from '@/context/ThemeContext';
+import Nav from '@/components/header/nav';
+import Footer from '@/components/footer';
 
 
 export default function Layout({ children }: { children: React.ReactNode }) {
@@ -23,6 +24,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
           <ThemeProvider>
             <Nav />
             {children}
+            <Footer />
           </ThemeProvider>
         </body>
     </html>

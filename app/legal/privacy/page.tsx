@@ -7,7 +7,7 @@ export default function Page() {
             <section id="changelog">
                 <div className="relative">
                     <div className="container flex flex-col px-5 py-28 mx-auto max-w-screen-lg">
-                        <Title title='Changelog'/>
+                        <Title title='Politique de confidentilaté'/>
                         <span className='text-semibold'>Découvrez les dernières mise à jour du site.</span>
                         <div className='pt-20' id="18-09-2024">
                             <a href='#18-09-2024' className='text-xl font-semibold'>18 septembre 2024</a>

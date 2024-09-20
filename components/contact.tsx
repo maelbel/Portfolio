@@ -21,7 +21,7 @@ const Contact: FC = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="mx-auto mt-4 max-w-xl sm:mt-10">
+    <form onSubmit={handleSubmit(onSubmit)} className="mx-auto my-4 max-w-xl sm:my-10">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
                 <label htmlFor="first-name" className="block text-sm font-semibold leading-6">
@@ -31,7 +31,7 @@ const Contact: FC = () => {
                     <input
                         type="text"
                         autoComplete="given-name"
-                        className="block w-full rounded-md border-0 text-gray-900 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 bg-gray-100 shadow-sm ring-1 ring-inset ring-gray-200 placeholder:text-gray-200 dark:placeholder:text-gray-600 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6 dark:text-gray-50 dark:bg-gray-800 dark:ring-gray-800"
                         {...register('firstname', { required: true })}
                     />
                 </div>
@@ -43,8 +43,8 @@ const Contact: FC = () => {
                 <div className="mt-2.5">
                     <input
                         type="text"
-                        autoComplete="given-name"
-                        className="block w-full rounded-md border-0 text-gray-900 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                        autoComplete="family-name"
+                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 bg-gray-100 shadow-sm ring-1 ring-inset ring-gray-200 placeholder:text-gray-200 dark:placeholder:text-gray-600 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6 dark:text-gray-50 dark:bg-gray-800 dark:ring-gray-800"
                         {...register('lastname', { required: true })}
                     />
                 </div>
@@ -57,7 +57,7 @@ const Contact: FC = () => {
                     <input
                         type="email"
                         autoComplete="email"
-                        className="block w-full rounded-md border-0 text-gray-900 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 bg-gray-100 shadow-sm ring-1 ring-inset ring-gray-200 placeholder:text-gray-200 dark:placeholder:text-gray-600 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6 dark:text-gray-50 dark:bg-gray-800 dark:ring-gray-800"
                         {...register('email', { required: true })}
                     />
                 </div>
@@ -70,7 +70,7 @@ const Contact: FC = () => {
                     <input
                         type="text"
                         autoComplete="phone"
-                        className="block w-full rounded-md border-0 text-gray-900 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 bg-gray-100 shadow-sm ring-1 ring-inset ring-gray-200 placeholder:text-gray-200 dark:placeholder:text-gray-600 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6 dark:text-gray-50 dark:bg-gray-800 dark:ring-gray-800"
                         {...register('phone', { required: false })}
                     />
                 </div>
@@ -83,7 +83,7 @@ const Contact: FC = () => {
                     <input
                         type="text"
                         autoComplete="subject"
-                        className="block w-full rounded-md border-0 text-gray-900 px-3.5 py-2 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 bg-gray-100 shadow-sm ring-1 ring-inset ring-gray-200 placeholder:text-gray-200 dark:placeholder:text-gray-600 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6 dark:text-gray-50 dark:bg-gray-800 dark:ring-gray-800"
                         {...register('subject', { required: true })}
                     />
                 </div>
@@ -95,7 +95,7 @@ const Contact: FC = () => {
                 <div className="mt-2.5">
                     <textarea
                         rows={4}
-                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6"
+                        className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 bg-gray-100 shadow-sm ring-1 ring-inset ring-gray-200 placeholder:text-gray-200 dark:placeholder:text-gray-600 focus:ring-2 focus:ring-inset focus:ring-blue-600 sm:text-sm sm:leading-6 dark:text-gray-50 dark:bg-gray-800 dark:ring-gray-800"
                         defaultValue={''}
                         {...register('message', { required: true })}
                     />
