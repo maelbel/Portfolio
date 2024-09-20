@@ -17,16 +17,16 @@ export default function NavLinks() {
     const pathname = usePathname();
     
     return (
-        <nav className='flex justify-center items-center px-3'>
+        <nav className='flex justify-center items-center gap-2 px-3'>
             {links.map((link) => {
                 return (
                 <Link
                     key={link.name}
                     href={link.href}
                     className={clsx(
-                    'flex justify-center items-center py-3 px-5 text-md text-gray-400 hover:text-gray-900 dark:hover:text-gray-50 md:p-2 md:px-3',
+                    'flex justify-center items-center py-3 px-5 text-md text-gray-700 dark:text-gray-200 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-400 md:p-2 md:px-3',
                     {
-                        'text-gray-900 dark:text-gray-50 font-bold': pathname === link.href,
+                        'text-gray-900 bg-gray-200 dark:text-gray-50 dark:bg-gray-700 font-bold': pathname === link.href,
                     },
                     )}
                 >

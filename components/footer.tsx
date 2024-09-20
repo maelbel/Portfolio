@@ -8,6 +8,7 @@ import {
   ChatBubbleLeftEllipsisIcon,
   DocumentTextIcon,
   ArrowDownTrayIcon,
+  ChevronUpIcon,
 } from '@heroicons/react/24/outline';
 
 export default function Footer() {
@@ -65,7 +66,7 @@ export default function Footer() {
       <div className="flex flex-col">
         <div className="container p-5 mx-auto max-w-screen-lg">
           <div className="flex justify-end">
-            <a href="#">Revenir en haut</a>
+            <a href="#" className='flex justify-between gap-2 p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-400'><ChevronUpIcon className='w-5' />Revenir en haut</a>
           </div>
         </div>
         <hr className='border-gray-200 dark:border-gray-700'/>
@@ -84,13 +85,13 @@ export default function Footer() {
             <div className="flex gap-2 mb-2">
               <a href="/changelog">Changelog</a>
               <span>-</span>
-              <a href="#footer">Mentions légales</a>
+              <a href="/legal/notices">Mentions légales</a>
               <span>-</span>
-              <a href="#footer">Politique de confidentialité</a>
+              <a href="/legal/privacy">Politique de confidentialité</a>
               <span>-</span>
-              <a href="#footer">Conditions d&apos;utilisations</a>
+              <a href="/legal/terms">Conditions d&apos;utilisations</a>
               <span>-</span>
-              <a href="#footer">Crédits</a>
+              <a href="/legal/credits">Crédits</a>
             </div>
             <div className="text-sm">
               © 2024 ▸ Tous droits réservés

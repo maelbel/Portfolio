@@ -1,4 +1,5 @@
 import Title from '@/components/title';
+import Balise from '@/components/balise';
 
 export default function Page() {
   
@@ -8,34 +9,35 @@ export default function Page() {
                 <div className="relative">
                     <div className="container flex flex-col px-5 py-28 mx-auto max-w-screen-lg">
                         <Title title='Crédits'/>
-                        <span className='text-semibold'>Découvrez les dernières mise à jour du site.</span>
-                        <div className='pt-20' id="18-09-2024">
-                            <a href='#18-09-2024' className='text-xl font-semibold'>18 septembre 2024</a>
+                        <span className='text-semibold text-gray-800 dark:text-gray-200'>Dernière modification: 20 septembre 2024</span>
+                        <div className='pt-20' id="stack-technique">
+                            <a href='#stack-technique' className='text-xl font-semibold'>Stack Technique</a>
+                            <div className='flex gap-4 mt-5'>
+                                <Balise title="Typescript" href="" icon="typescript"/>
+                                <Balise title="Next" href="" icon="next"/>
+                                <Balise title="TailwindCSS" href="" icon="tailwind"/>
+                            </div>
+                        </div>
+                        <div className='pt-20' id="conception">
+                            <a href='#conception' className='text-xl font-semibold'>Conception</a>
+                            <p className='py-5'>
+                                Pour concevoir et développer ce site, je me suis beaucoup inspiré du portfolio de Morgan Scholz mais également de son template Astro Sphere développé par Mark Horn. 
+                            </p>
+                        </div>
+                        <div className='pt-20' id="icones">
+                            <a href='#icones' className='text-xl font-semibold'>Icônes</a>
                             <ul className='list-disc list-inside py-5'>
-                                <li className='mb-2'>Modification du contenu de la page d&apos;accueil</li>
-                                <li className='mb-2'>Modification de la section &apos;contact&apos;</li>
-                                <li className='mb-2'>Ajout du footer</li>
-                                <li className='mb-2'>Ajout de la page &apos;changelog&apos;</li>
+                                <li className='mb-2'>Heroicons pour toutes les icônes fonctionnelles</li>
+                                <li className='mb-2'>Devicon pour les icônes des outils et technologies</li>
                             </ul>
                         </div>
-                        <div className='pt-20' id="17-09-2024">
-                            <a href='#17-09-2024' className='text-xl font-semibold'>17 septembre 2024</a>
+                        <div className='pt-20' id="serveurs">
+                            <a href='#serveurs' className='text-xl font-semibold'>Serveurs</a>
                             <ul className='list-disc list-inside py-5'>
-                                <li className='mb-2'>Modification de la section &apos;projets&apos;</li>
-                            </ul>
-                        </div>
-                        <div className='pt-20' id="16-09-2024">
-                            <a href='#16-09-2024' className='text-xl font-semibold'>16 septembre 2024</a>
-                            <ul className='list-disc list-inside py-5'>
-                                <li className='mb-2'>Refonte du design du site</li>
-                                <li className='mb-2'>Ajout du basculement entre le thème clair et sombre</li>
-                                <li className='mb-2'>Ajout du status des services</li>
-                            </ul>
-                        </div>
-                        <div className='pt-20' id="13-09-2024">
-                            <a href='#13-09-2024' className='text-xl font-semibold'>13 septembre 2024</a>
-                            <ul className='list-disc list-inside py-5'>
-                                <li>Mise en ligne du site</li>
+                                <li className='mb-2'>Vercel pour la mise en ligne de mes sites en Javascript et Typescript</li>
+                                <li className='mb-2'>AlwaysData pour la mise en ligne de mes sites en PHP</li>
+                                <li className='mb-2'>OVH pour la gestion de mes noms de domaine</li>
+                                <li className='mb-2'>UptimeRobot pour le monitoring des status de l&apos;ensemble de mes sites et APIs.</li>
                             </ul>
                         </div>
                     </div>

@@ -9,6 +9,12 @@ export default function Page() {
                     <div className="container flex flex-col px-5 py-28 mx-auto max-w-screen-lg">
                         <Title title='Changelog'/>
                         <span className='text-semibold'>Découvrez les dernières mise à jour du site.</span>
+                        <div className='pt-20' id="20-09-2024">
+                            <a href='#20-09-2024' className='text-xl font-semibold'>20 septembre 2024</a>
+                            <ul className='list-disc list-inside py-5'>
+                                <li className='mb-2'>Ajout des pages légales</li>
+                            </ul>
+                        </div>
                         <div className='pt-20' id="18-09-2024">
                             <a href='#18-09-2024' className='text-xl font-semibold'>18 septembre 2024</a>
                             <ul className='list-disc list-inside py-5'>
