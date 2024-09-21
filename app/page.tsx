@@ -2,7 +2,7 @@ import Typing from '@/components/typing';
 import Title from '@/components/title';
 import Parcours from '@/components/parcours';
 import Project from '@/components/project';
-import Tag from '@/components/tag';
+import Tags from '@/components/tags';
 import Stack from '@/components/stack';
 // import Balise from '@/app/components/balise';
 // import Link from 'next/link';
@@ -17,7 +17,7 @@ export default function Page() {
         <div className="relative h-screen flex flex-col justify-center items-center mx-auto lg:flex-row">
           <div className="flex flex-col justify-center items-center p-6 text-center rounded-sm">
             <h1 className="text-2xl font-extrabold text-center">Salut, je suis Mael Belliard</h1>
-            <h1 className="text-5xl font-semibold text-blue-600" >Développeur <Typing /></h1>
+            <h1 className="text-5xl font-semibold text-blue-600" >Développeur <br className='md:hidden'/><Typing /></h1>
             <p className="mt-6 mb-8 text-lg sm:mb-12">Activement à la recherche d&apos;une alternance en tant que développeur full-stack</p>
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
               <a rel="noopener noreferrer" href="#projects" className="px-8 py-3 text-lg font-semibold rounded bg-blue-600 text-gray-50 hover:bg-gray-900 dark:hover:bg-gray-800 transition-all duration-400">Explorer mes projets</a>
@@ -33,8 +33,8 @@ export default function Page() {
       </section>
       <section id="about">
         <div className='relative'>
-          <div className='container flex justify-center px-5 pt-28 pb-52 mx-auto max-w-screen-lg'>
-            <div className='w-2/3 text-justify'>
+          <div className='container flex justify-center px-5 pt-28 mx-auto max-w-screen-lg'>
+            <div className='text-justify'>
               <Title title='À propos' />
               <p className='my-10'>Je suis <b>développeur full-stack, créateur d&apos;applications, passionné de technologies, étudiant en alternance</b> et <b>explorateur de solutions innovantes.</b></p>
               <p className='my-10'>J&apos;aime à la fois concevoir et optimiser des solutions numériques. Je suis motivé par des projets techniques qui nécessitent de la recherche autonome et une résolution de problèmes dynamique. Ma véritable passion réside dans la création d&apos;applications performantes, tout en accordant une attention particulière à l&apos;expérience utilisateur, à la performance et à la qualité du code.</p>
@@ -43,13 +43,6 @@ export default function Page() {
               <p className='my-10'>Actuellement</p>
               <p className='my-10'>Je cherche une alternance en tant que développeur full-stack, où je me concentrerais sur la planification de solutions innovantes, la conception d&apos;application et le développement avec des technologies comme Next.js, React.js, Node.js, PostgreSQL et MongoDB.</p>
             </div>
-            <div className='w-1/3'></div>
-            <div className='absolute right-20 bottom-40 -z-20'>
-              <Image src="/photo.png" alt="photo-mael" width={725} height={725}/>
-            </div>
-          </div>
-          <div className='absolute bottom-0 -z-10'>
-            <Image src="/outline.svg" alt="ligne-bleu" width={1920} height={1080} className='scale-x-[-1]'/>
           </div>
         </div>
       </section>
@@ -59,19 +52,19 @@ export default function Page() {
             <Title title='Mon parcours' />
             <div className=''>
               <Parcours title="Master Lead Developer: Data & IA" lieu="En distanciel" date="Octobre 2024 - Juin 2026">
-                <Tag title='REACTJS'/><Tag title='REACT NATIVE'/><Tag title='PYTHON'/><Tag title='DJANGO'/><Tag title='POSTGRESQL'/>
+                <Tags titles={['REACTJS', 'REACT NATIVE', 'PYTHON', 'DJANGO', 'POSTGRESQL']}/>
               </Parcours>
               <Parcours title="MBA Développeur FullStack" lieu="Lyon" date="Septembre 2023 - Janvier 2024">
-                <Tag title='REACTJS'/><Tag title='GRAPHQL'/><Tag title='LARAVEL'/><Tag title='DOCKER'/>
+                <Tags titles={['REACTJS', 'GRAPHQL', 'LARAVEL', 'DOCKER', 'POSTGRESQL']}/>
               </Parcours>
               <Parcours title="Art&Styles" lieu="Biguglia, Corse" date="Septembre 2022 - Juin 2023">
-              <Tag title='PRESTASHOP'/><Tag title='PHP'/><Tag title='SMARTY'/><Tag title='ODOO'/><Tag title='PYTHON'/><Tag title='XML'/>
+                <Tags titles={['PRESTASHOP', 'PHP', 'SMARTY', 'ODOO', 'PYTHON', 'XML']}/>
               </Parcours>
               <Parcours title="Licence Science Pour l'Ingénieur: parcours Informatique" lieu="Université de Corse, Corte" date="2021 - 2022">
-                <Tag title='JAVA'/><Tag title='PHP'/><Tag title='MYSQL'/><Tag title='PYTHON'/><Tag title='C'/>
+                <Tags titles={['JAVA', 'PHP', 'PYTHON', 'MYSQL', 'C', 'ANDROID STUDIO']}/>
               </Parcours>
               <Parcours title="DUT Métiers du Multimédia et de l'Internet" lieu="Université de Corse, Corte" date="2019 - 2021">
-                <Tag title='HTML'/><Tag title='CSS'/><Tag title='JAVASCRIPT'/><Tag title='PYTHON'/><Tag title='PHP'/>
+                <Tags titles={['HTML', 'CSS', 'JAVASCRIPT', 'PYTHON', 'PHP']}/>
               </Parcours>
             </div>
           </div>

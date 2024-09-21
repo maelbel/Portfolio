@@ -21,7 +21,7 @@ const Contact: FC = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)} className="mx-auto my-4 max-w-xl sm:my-10">
+    <form onSubmit={handleSubmit(onSubmit)} className="mx-auto my-12 max-w-xl">
         <div className="grid grid-cols-1 gap-x-8 gap-y-6 sm:grid-cols-2">
             <div>
                 <label htmlFor="first-name" className="block text-sm font-semibold leading-6">

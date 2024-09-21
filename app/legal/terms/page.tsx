@@ -8,7 +8,7 @@ export default function Page() {
                 <div className="relative">
                     <div className="container flex flex-col px-5 py-28 mx-auto max-w-screen-lg">
                         <Title title="Conditions d'utilisation"/>
-                        <span className='text-semibold text-gray-800 dark:text-gray-200'>Dernière modification: 20 septembre 2024</span>
+                        <span className='text-semibold text-gray-800 dark:text-gray-200'>Dernières modifications: 20 septembre 2024</span>
                         <p className='mt-10'>Les présentes conditions générales d&apos;utilisation (ci-après &quot;CGU&quot;) régissent l&apos;utilisation du site web Mael Belliard | Portfolio (ci-après &quot;le site&quot;). En accédant ou en utilisant le site, vous acceptez pleinement les présentes CGU.</p>
                         <div className='pt-20' id="objet">
                             <a href='#objet' className='text-xl font-semibold'>Objet</a>

@@ -8,13 +8,13 @@ export default function Page() {
                 <div className="relative">
                     <div className="container flex flex-col px-5 py-28 mx-auto max-w-screen-lg">
                         <Title title='Mentions légales'/>
-                        <span className='text-semibold text-gray-800 dark:text-gray-200'>Dernière modification: 20 septembre 2024</span>
+                        <span className='text-semibold text-gray-800 dark:text-gray-200'>Dernières modifications: 20 septembre 2024</span>
                         <p className='mt-10'>Conformément aux dispositions de la loi n° 2004-575 du 21 juin 2004 pour la confiance en l&apos;économie numérique, il est précisé aux utilisateurs du site Mael Belliard | Portfolio l&apos;identité des différents intervenants dans le cadre de sa réalisation et de son suivi.</p>
                         <div className='pt-20' id="edition">
                             <a href='#edition' className='text-xl font-semibold'>Édition du site</a>
                             <ul className='list-disc list-inside py-5'>
                                 <li className='mb-2'><b>Nom du site:</b> Mael Belliard | Portfolio</li>
-                                <li className='mb-2'><b>URL du site:</b> mbelliard.dev</li>
+                                <li className='mb-2'><b>URL du site:</b> maelbelliard.dev</li>
                                 <li className='mb-2'><b>Propriétaire:</b> Mael Belliard</li>
                                 <li className='mb-2'><b>Adresse:</b> 69100 Villeurbanne, France</li>
                                 <li className='mb-2'><b>Email:</b> mael.belliard@laposte.net</li>

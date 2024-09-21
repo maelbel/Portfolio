@@ -17,7 +17,7 @@ export default function Footer() {
       <section id="contact">
         <div className='container flex flex-col px-5 pt-28 mx-auto max-w-screen-lg'>
           <Title title='Contactez-moi' />
-          <div className='flex justify-center'>
+          <div className='flex flex-col md:flex-row justify-center'>
             <div className="px-6 lg:px-8">
               <div className='flex flex-col justify-around gap-5 mt-4 sm:mt-10'>
                 <a href="mailto:mael.belliard@laposte.net" target='_blank' rel='noopener noreferrer' className='flex justify-between items-center gap-5 p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-400'>
@@ -57,7 +57,7 @@ export default function Footer() {
                 </a>
               </div>
             </div>
-            <div className="px-6 lg:px-8 border-l border-gray-200 dark:border-gray-700">
+            <div className="px-6 lg:px-8 md:border-l md:border-gray-200 md:dark:border-gray-700">
               <Contact />
             </div>
           </div>
@@ -65,12 +65,12 @@ export default function Footer() {
       </section>
       <div className="flex flex-col">
         <div className="container p-5 mx-auto max-w-screen-lg">
-          <div className="flex justify-end">
+          <div className="flex justify-center md:justify-end">
             <a href="#" className='flex justify-between gap-2 p-4 rounded-lg hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-400'><ChevronUpIcon className='w-5' />Revenir en haut</a>
           </div>
         </div>
         <hr className='border-gray-200 dark:border-gray-700'/>
-        <div className="container p-5 mx-auto max-w-screen-lg flex justify-between items-center">
+        <div className="container p-5 mx-auto max-w-screen-lg flex flex-col gap-2 md:flex-row justify-between items-center">
           <a href="/"><h1 className='text-xl font-bold'>Mael Belliard</h1></a>
           <a href="https://stats.uptimerobot.com/3Ao7tMWcUq" target="_blank" rel="noopener noreferrer" className='flex gap-2 justify-center sm:justify-end items-center'>
             <span className="relative flex h-3 w-3">
@@ -80,21 +80,21 @@ export default function Footer() {
             Services Opérationnels</a>
         </div>
         <hr className='border-gray-200 dark:border-gray-700'/>
-        <div className="container p-5 mx-auto max-w-screen-lg flex justify-between items-center">
-          <div className="">
-            <div className="flex gap-2 mb-2">
+        <div className="container p-5 mx-auto max-w-screen-lg flex flex-col-reverse gap-3 md:flex-row md:justify-between items-center">
+          <div className="flex flex-col justify-center items-center gap-2 md:items-start">
+            <div className="flex flex-wrap gap-2 mb-2 whitespace-nowrap text-sm md:text-md justify-center">
               <a href="/changelog">Changelog</a>
-              <span>-</span>
+              <span>|</span>
               <a href="/legal/notices">Mentions légales</a>
-              <span>-</span>
-              <a href="/legal/privacy">Politique de confidentialité</a>
-              <span>-</span>
-              <a href="/legal/terms">Conditions d&apos;utilisations</a>
-              <span>-</span>
+              <span>|</span>
               <a href="/legal/credits">Crédits</a>
+              <span>|</span>
+              <a href="/legal/privacy">Politique de confidentialité</a>
+              <span>|</span>
+              <a href="/legal/terms">Conditions d&apos;utilisations</a>
             </div>
             <div className="text-sm">
-              © 2024 ▸ Tous droits réservés
+              © 2024 | Tous droits réservés
             </div>
           </div>
           <div className="flex items-center gap-2">

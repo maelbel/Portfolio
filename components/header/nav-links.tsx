@@ -17,7 +17,7 @@ export default function NavLinks() {
     const pathname = usePathname();
     
     return (
-        <nav className='flex justify-center items-center gap-2 px-3'>
+        <nav className='flex flex-col md:flex-row justify-center items-center gap-2 px-3'>
             {links.map((link) => {
                 return (
                 <Link

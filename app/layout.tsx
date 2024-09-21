@@ -4,6 +4,7 @@ import '@/app/ui/global.css';
 import { opensans } from '@/app/ui/fonts';
 import { ThemeProvider } from '@/context/ThemeContext';
 import Nav from '@/components/header/nav';
+import NavPhone from '@/components/header/nav-phone';
 import Footer from '@/components/footer';
 
 
@@ -23,6 +24,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <body className={`${opensans.className} antialiased bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-50`}>
           <ThemeProvider>
             <Nav />
+            <NavPhone />
             {children}
             <Footer />
           </ThemeProvider>
