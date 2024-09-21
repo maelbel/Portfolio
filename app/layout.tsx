@@ -18,7 +18,7 @@ export default function Layout({ children }: { children: React.ReactNode }) {
         <meta name="keywords" content="développeur, fullstack, frontend, backend, junior"/>
         <meta name="author" content="Mael Belliard"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Portfolio | Mael</title>
+        <title>Mael Belliard | Portfolio</title>
         <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
       </head>
         <body className={`${opensans.className} antialiased bg-gray-50 text-gray-900 dark:bg-gray-900 dark:text-gray-50`}>
