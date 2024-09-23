@@ -35,6 +35,7 @@ export default function Page() {
                             <a href='#serveurs' className='text-xl font-semibold'>Serveurs</a>
                             <ul className='list-disc list-inside py-5'>
                                 <li className='mb-2'><a href="https://vercel.com/" className='text-black dark:text-white font-semibold underline' target='_blank' rel='noopener noreferrer'>Vercel</a> pour la mise en ligne de mes sites en Javascript et Typescript</li>
+                                <li className='mb-2'><a href="https://render.com/" className='text-black dark:text-white font-semibold underline' target='_blank' rel='noopener noreferrer'>Render</a> pour la mise en ligne de mes sites en NodeJS</li>
                                 <li className='mb-2'><a href="https://www.alwaysdata.com/" className='text-black dark:text-white font-semibold underline' target='_blank' rel='noopener noreferrer'>AlwaysData</a> pour la mise en ligne de mes sites en PHP</li>
                                 <li className='mb-2'><a href="https://www.ovhcloud.com/" className='text-black dark:text-white font-semibold underline' target='_blank' rel='noopener noreferrer'>OVH</a> pour la gestion de mes noms de domaine</li>
                                 <li className='mb-2'><a href="https://uptimerobot.com/" className='text-black dark:text-white font-semibold underline' target='_blank' rel='noopener noreferrer'>UptimeRobot</a> pour le monitoring des status de l&apos;ensemble de mes sites et APIs.</li>
