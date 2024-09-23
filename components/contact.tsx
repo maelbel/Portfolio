@@ -14,10 +14,12 @@ export type FormData = {
 };
 
 const Contact: FC = () => {
+    // const [ agree, setAgree ] = useState(false);
+
   const { register, handleSubmit } = useForm<FormData>();
 
   function onSubmit(data: FormData) {
-    sendEmail(data)
+    sendEmail(data);
   }
 
   return (
@@ -100,6 +102,14 @@ const Contact: FC = () => {
                         {...register('message', { required: true })}
                     />
                 </div>
+            </div>
+            <div className="flex gap-x-4 sm:col-span-2">
+                <label className="relative flex h-6 items-center text-sm">
+                    <input type="checkbox" className="peer appearance-none w-10 h-4" required/>
+                    <span className="absolute top-1 left-0 w-8 h-4 cursor-pointer forced-colors:hidden bg-gray-200 dark:bg-gray-700 before:absolute before:content[''] before:w-3 before:h-3 before:bg-gray-50 dark:before:bg-gray-900 before:left-0.5 before:bottom-0.5 before:rounded-lg before:transition-all before:duration-400 peer-checked:bg-blue-600 peer-checked:before:translate-x-4 transition-all duration-400 rounded-lg"></span>
+                    En sélectionnant ceci, vous acceptez notre&nbsp;
+                    <a href="/legal/privacy" className="font-semibold text-gray-900 dark:text-gray-50 underline">politique de confidentialité</a>.
+                </label>
             </div>
         </div>
         <div className="mt-10">
