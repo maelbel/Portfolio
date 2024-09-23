@@ -77,13 +77,13 @@ export default function Page() {
             {/* <a href="/projects" className='mb-2 me-4'>Explorer</a> */}
           </div>
           <div className='p-2 mb-4'>
-            <Project title="Portfolio" description="Développement de mon portfolio" date="SEPTEMBRE 2024" link="https://belliard-portfolio.vercel.app/">
+            <Project title="Portfolio" description="Développement de mon portfolio" date="SEPTEMBRE 2024" link="https://maelbelliard.dev/">
               <Stack size="25" icons={["typescript", "next", "tailwind"]} />
             </Project>
-            <Project title="Edusign" description="Site de gestion numérique des présences avec signatures" date="AOUT 2024 - SEPTEMBRE 2024" link="https://github.com/maelbel/Edusign">
+            <Project title="Edusign" description="Site de gestion numérique des présences avec signatures" date="AOUT 2024 - SEPTEMBRE 2024" link="https://edusign.maelbelliard.dev/">
               <Stack size="25" icons={["php", "bootstrap", "jquery", "mysql"]} />
             </Project>
-            <Project title="COSMOS" description="Site multilingue sur l'espace" date="AVRIL 2021" link="https://github.com/maelbel/WebSite-COSMOS">
+            <Project title="COSMOS" description="Site multilingue sur l'espace" date="AVRIL 2021" link="https://cosmos.maelbelliard.dev/">
               <Stack size="25" icons={["nodejs", "express", "mongodb"]} />
             </Project>
             <Project title="Le mystère de Corte" description="Jeu Intéractif Full Motion Vidéo" date="2019 - 2024" link="https://github.com/maelbel/le-mystere-de-corte">
