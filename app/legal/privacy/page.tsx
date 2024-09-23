@@ -7,7 +7,7 @@ export default function Page() {
             <section id="changelog">
                 <div className="relative">
                     <div className="container flex flex-col px-5 py-28 mx-auto max-w-screen-lg">
-                        <Title title='Politique de confidentilaté'/>
+                        <Title title='Politique de confidentialité'/>
                         <span className='text-semibold text-gray-800 dark:text-gray-200'>Dernières modifications: 20 septembre 2024</span>
                         <p className='mt-10'>Cette politique de confidentialité décrit comment nous collectons, utilisons, et protégeons les informations personnelles que vous fournissez sur notre site web Mael Belliard | Portfolio (ci-après &quot;le site&quot;).</p>
                         <div className='pt-20' id="collecte-informations">
