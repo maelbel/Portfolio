@@ -1,5 +1,6 @@
 import Title from '@/components/title';
 import Contact from '@/components/contact';
+import UptimeRobotButton from '@/components/services';
 
 import {
   EnvelopeIcon,
@@ -72,12 +73,7 @@ export default function Footer() {
         <hr className='border-gray-200 dark:border-gray-700'/>
         <div className="container p-5 mx-auto max-w-screen-lg flex flex-col gap-2 md:flex-row justify-between items-center">
           <a href="/"><h1 className='text-xl font-bold'>Mael Belliard</h1></a>
-          <a href="https://stats.uptimerobot.com/3Ao7tMWcUq" target="_blank" rel="noopener noreferrer" className='flex gap-2 justify-center sm:justify-end items-center'>
-            <span className="relative flex h-3 w-3">
-              <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-green-300"></span>
-              <span className="relative inline-flex rounded-full h-3 w-3 bg-green-500"></span>
-            </span>
-            Services Opérationnels</a>
+          <UptimeRobotButton/>
         </div>
         <hr className='border-gray-200 dark:border-gray-700'/>
         <div className="container p-5 mx-auto max-w-screen-lg flex flex-col-reverse gap-3 md:flex-row md:justify-between items-center">
