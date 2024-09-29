@@ -2,7 +2,7 @@ import Typing from '@/components/typing';
 import Title from '@/components/title';
 import Project from '@/components/project';
 import Stack from '@/components/stack';
-// import Balise from '@/app/components/balise';
+import Balise from '@/components/balise';
 // import Link from 'next/link';
 
 import Image from 'next/image';
@@ -63,6 +63,57 @@ export default function Page() {
             <Project title="Le mystère de Corte" description="Jeu Intéractif Full Motion Vidéo" date="2019 - 2024" link="https://github.com/maelbel/le-mystere-de-corte">
               <Stack size="25" icons={["electron"]} />
             </Project>
+          </div>
+        </div>
+      </section>
+      <section id="stack">
+        <div className='container flex flex-col px-5 pt-28 mx-auto max-w-screen-lg'>
+          <div className='flex justify-between items-end'>
+            <Title title='Ma stack technique' />
+          </div>
+          <div className='p-2 mb-4'>
+            <div className='mt-5'>
+              <p className='text-md font-semibold'>Je développe avec</p>
+              <div className='flex items-center gap-2 py-3'>
+                <Balise title="HTML" icon="html" href="https://html.spec.whatwg.org/multipage/"/>
+                <Balise title="Javascript" icon="javascript" href="https://developer.mozilla.org/fr/docs/Web/JavaScript"/>
+                <Balise title="Typescript" icon="typescript" href="https://www.typescriptlang.org/"/>
+                <Balise title="PHP" icon="php" href="https://www.php.net/"/>
+              </div>
+            </div>
+            <div className='mt-5'>
+              <p className='text-md font-semibold'>Je construit grâce à</p>
+              <div className='flex items-center gap-2 py-3'>
+                <Balise title="NodeJS" icon="nodejs" href="https://nodejs.org/"/>
+                <Balise title="Next" icon="next" href="https://nextjs.org/"/>
+                <Balise title="React" icon="react" href="https://fr.react.dev/"/>
+              </div>
+            </div>
+            <div className='mt-5'>
+              <p className='text-md font-semibold'>J&apos;habille avec</p>
+              <div className='flex items-center gap-2 py-3'>
+                <Balise title="CSS" icon="css" href="https://www.w3.org/Style/CSS/"/>
+                <Balise title="Bootstrap" icon="bootstrap" href="https://getbootstrap.com/"/>
+                <Balise title="TailwindCSS" icon="tailwind" href="https://tailwindcss.com/"/>
+              </div>
+            </div>
+            <div className='mt-5'>
+              <p className='text-md font-semibold'>Je stock en utilisant</p>
+              <div className='flex items-center gap-2 py-3'>
+                <Balise title="MySQL" icon="mysql" href="https://www.mysql.com/fr/"/>
+                <Balise title="PostGreSQL" icon="postgresql" href="https://www.postgresql.org/"/>
+                <Balise title="MongoDB" icon="mongodb" href="https://www.mongodb.com/"/>
+              </div>
+            </div>
+            <div className='mt-5'>
+              <p className='text-md font-semibold'>Je mets mes projets en ligne via</p>
+              <div className='flex items-center gap-2 py-3'>
+                <Balise title="Vercel" icon="vercel" href="https://vercel.com/"/>
+                <Balise title="AlwaysData" icon="alwaysdata" href="https://www.alwaysdata.com/"/>
+                <Balise title="Render" icon="render" href="https://render.com/"/>
+                <Balise title="OVH" icon="ovh" href="https://www.ovhcloud.com/fr/"/>
+              </div>
+            </div>
           </div>
         </div>
       </section>

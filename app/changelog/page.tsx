@@ -13,6 +13,7 @@ export default function Page() {
                             <a href='#29-09-2024' className='text-xl font-semibold'>29 septembre 2024</a>
                             <ul className='list-disc list-inside py-5'>
                                 <li className='mb-2'>Ajout de la page &apos;parcours&apos;</li>
+                                <li className='mb-2'>Ajout de la section &apos;stack technique&apos;</li>
                             </ul>
                         </div>
                         <div className='pt-20' id="24-09-2024">
