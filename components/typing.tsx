@@ -9,7 +9,7 @@ export default function Typing() {
   
     React.useEffect(() => {
       const typed = new Typed(el.current, {
-        strings: ['Full-Stack', 'Front-End', 'Back-End'],
+        strings: ['Full-Stack', 'JavaScript', 'PHP', 'Python'],
         typeSpeed: 100,
         backSpeed: 50,
         loop: true,

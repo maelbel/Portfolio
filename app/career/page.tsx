@@ -11,10 +11,13 @@ export default function Page() {
                 <div className='container flex flex-col px-5 pt-28 mx-auto max-w-screen-lg'>
                     <Title title='Mon parcours' />
                     <div className=''>
-                        <Parcours title="Master Lead Developer: Data & IA" lieu="En distanciel" date="Octobre 2024 - Juin 2026">
-                            <Tags titles={['REACTJS', 'REACT NATIVE', 'PYTHON', 'DJANGO', 'POSTGRESQL']}/>
+                        <Parcours title="Mastère Européen Expert IT : Applications Intelligentes et Big Data" lieu="Dawan, Lyon" date="Janvier 2025 - Décembre 2026">
+                            <Tags titles={['PYTHON', 'DJANGO', 'PHP', 'SYMFONY', 'MYSQL', 'NOSQL', 'JAVA', 'SPRING', 'ANDROID', 'AGILE SCRUM', 'NODEJS', 'C#', 'ASP.NET']}/>
                         </Parcours>
-                        <Parcours title="MBA Développeur FullStack" lieu="Lyon" date="Septembre 2023 - Janvier 2024">
+                        <Parcours title="POEI Développeur IA" lieu="Dawan, Lyon" date="Octobre 2024 - Janvier 2025">
+                            <Tags titles={['PYTHON', 'DJANGO', 'JAVASCRIPT', 'GIT', 'REACTJS', 'CHATGPT', 'DALL-E']}/>
+                        </Parcours>
+                        <Parcours title="MBA Développeur FullStack" lieu="MyDigitalSchool, Lyon" date="Septembre 2023 - Janvier 2024">
                             <Tags titles={['REACTJS', 'GRAPHQL', 'LARAVEL', 'DOCKER', 'POSTGRESQL']}/>
                         </Parcours>
                         <Parcours title="Art&Styles" lieu="Biguglia, Corse" date="Septembre 2022 - Juin 2023">

@@ -18,9 +18,9 @@ export default function Page() {
             <h1 className="text-5xl font-semibold text-blue-600" >Développeur <br className='md:hidden'/><Typing /></h1>
             <p className="mt-6 mb-8 text-lg sm:mb-12">Activement à la recherche d&apos;une alternance en tant que développeur full-stack</p>
             <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-              <a rel="noopener noreferrer" href="#projects" className="px-8 py-3 text-lg font-semibold rounded bg-blue-600 text-gray-50 hover:bg-gray-900 dark:hover:bg-gray-800 transition-all duration-400">Explorer mes projets</a>
-              <a rel="noopener noreferrer" href="#resume" className="px-8 py-3 text-lg font-semibold rounded bg-gray-200 text-gray-900 hover:bg-gray-400 dark:bg-gray-800 dark:text-gray-50 dark:hover:bg-blue-600 transition-all duration-400">Découvrir mon parcours</a>
-              <a rel="noopener noreferrer" href="#about" className="px-8 py-3 text-lg font-semibold border rounded border-gray-900 text-gray-900 hover:border-blue-600 hover:text-blue-600 dark:text-gray-50 dark:border-gray-50 dark:hover:border-blue-600 dark:hover:text-blue-600 transition-all duration-400">En savoir plus</a>
+              <a rel="noopener noreferrer" href="#projects" className="px-8 py-3 text-lg font-semibold rounded bg-blue-600 text-gray-50 hover:bg-blue-500 transition-all duration-400">Explorer mes projets</a>
+              <a rel="noopener noreferrer" href="#resume" className="px-8 py-3 text-lg font-semibold rounded bg-gray-200 hover:bg-gray-300 dark:bg-gray-800 dark:hover:bg-gray-700 transition-all duration-400">Découvrir mon parcours</a>
+              <a rel="noopener noreferrer" href="#about" className="px-8 py-3 text-lg font-semibold rounded hover:bg-gray-100 dark:hover:bg-gray-800 transition-all duration-400">En savoir plus</a>
             </div>
           </div>
           <div className='absolute bottom-0 -z-10'>
